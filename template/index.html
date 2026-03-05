@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="../static/tailwind.js" defer></script>
+  <link href="../static/daisyui.css" rel="stylesheet" type="text/css" />
+  <title>Title</title>
+</head>
+<body>
+  <main>
+    <div class="bg-black p-[100px] mt-[100px]">
+      <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </main>
+</body>
+</html>
